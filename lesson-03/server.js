@@ -17,6 +17,7 @@ const typeDefs = `#graphql
     temp_max: Float
     pressure: Int
     humidity: Int
+    icon: String
     cod: Int
     message: String
   }
@@ -41,6 +42,7 @@ const resolvers = {
         temp_max: json.main?.temp_max ?? null,
         pressure: json.main?.pressure ?? null,
         humidity: json.main?.humidity ?? null,
+        icon: json.weather?.[0]?.icon ?? null,
         cod: Number(json.cod),
         message: json.message ?? null
       }

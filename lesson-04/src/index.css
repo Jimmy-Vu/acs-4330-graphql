@@ -1,0 +1,53 @@
+:root {
+  --sky-deep: #0b3d5c;
+  --sky-mid: #1a6b8a;
+  --sky-light: #7ec8e3;
+  --sand: #f3efe6;
+  --ink: #14212b;
+  --muted: #4a5d6a;
+  --card: rgba(255, 255, 255, 0.88);
+  --error: #9b2c2c;
+  --error-bg: #fde8e8;
+  --sans: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --display: Georgia, 'Times New Roman', serif;
+
+  font: 18px/1.45 var(--sans);
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, #9fd4ef 0%, transparent 55%),
+    linear-gradient(180deg, #c5e8f5 0%, #7eb8d4 40%, #3d7a9a 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+}
+
+#root {
+  width: min(480px, 100%);
+  margin: 0 auto;
+  min-height: 100svh;
+  padding: 48px 20px 64px;
+}
+
+h1 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  letter-spacing: -0.02em;
+  color: var(--sky-deep);
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0;
+}
